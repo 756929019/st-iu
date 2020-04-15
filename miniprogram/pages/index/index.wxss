@@ -1,0 +1,176 @@
+/**index.wxss**/
+@import "../../style/main.wxss";
+
+.parentGroup{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100rpx;
+}
+
+.userinfo-avatar {
+  width: 256rpx;
+  height: 256rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+swiper {
+    height: 421.5rpx;
+}
+swiper-item image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+swiper-item .swiper-item-view
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    text-align: center;
+}
+swiper-item .swiper-item-view .swiper-item-text
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 90rpx;
+  color: white;
+  font-weight: 500;
+}
+
+.swiper-container{
+  position: relative;
+  transform:translate3d(0,0,0);overflow:hidden;
+}
+.swiper-container .swiper{
+  height: 300rpx;
+  transform:translate3d(0,0,0);
+}
+.swiper-container .swiper .img{
+  width: 100%;
+  height: 100%;
+  filter: blur(7rpx);
+  -webkit-filter: blur(7rpx);
+  transform: scale(1.2)
+}
+
+.tab-h{height: 100rpx;width: 100%;line-height: 100rpx;background: #F7F7F7; font-size: 16px; white-space: nowrap;top: 0; left: 0; z-index: 99;}
+.tab-item{margin:0 42rpx;display: inline-block;}
+.tab-item.active{color: #1296db;position: relative;}
+.tab-item.active:after{ content: "";display: block;height: 4rpx;width: 90rpx;background: #1296db;position: absolute; bottom: 0;left: -10rpx;border-radius: 16rpx;}
+.item-ans{ width: 100%;display: flex; flex-grow: row no-wrap;justify-content: space-between; padding: 30rpx;box-sizing: border-box; height: 180rpx;align-items: center;border-bottom: 1px solid #F2F2F2;}
+.avatar{width: 100rpx;height: 100rpx;position: relative;padding-right: 30rpx;}
+.avatar .img{width: 100%;height: 100%;}
+.avatar .doyen{width: 40rpx;height: 40rpx;position: absolute;bottom: -2px;right: 20rpx;}
+.expertInfo{font-size: 12px;flex-grow: 2;color: #B0B0B0;line-height: 1.5em;}
+.expertInfo .name{font-size: 16px;color:#000;margin-bottom: 6px;}
+.askBtn{ width: 120rpx;height: 60rpx;line-height: 60rpx;text-align: center;font-size: 14px; border-radius: 60rpx;border: 1px solid #1296db; color:#1296db;}
+.tab-content{margin-top: 2rpx;}
+.scoll-h{height: 100%;padding: 2rpx;overflow-x: hidden;}
+
+
+.flex-list{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content:center;
+  justify-content:space-around;
+}
+ 
+.flex-list .flex-box{
+  width:48vw;
+  height: 200rpx;
+  text-align: center;
+  margin-left:1vw; 
+  margin-right:1vw; 
+  margin-top: 3rpx;
+  margin-bottom: 10rpx;
+  border-radius:5px; 
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.flex-list .flex-box .flex-box-txt{
+  background-color:rgba(0,0,0,0.4);
+  color: white;
+  bottom: 10rpx;
+  width: 100%;
+  position:absolute;
+}
+
+.flex-panel-title{
+  margin: 16rpx;
+  color: #707070;
+}
+
+.flex-list .flex-box-1{
+  width:98vw;
+  height: 330rpx;
+  text-align: center;
+  margin-left:1vw; 
+  margin-right:1vw; 
+  margin-top: 3rpx;
+  margin-bottom: 10rpx;
+  border-radius:5px; 
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.flex-list .flex-box-1 .flex-box-txt-top{
+  background-color:rgba(0,0,0,0.4);
+  color: white;
+  top: 10rpx;
+  width: 100%;
+  position:absolute;
+  text-align: left;
+}
+.flex-list .flex-box-1 .flex-box-txt{
+  background-color:rgba(0,0,0,0.4);
+  color: white;
+  bottom: 10rpx;
+  width: 100%;
+  position:absolute;
+  text-align: left;
+}
+
+.flex-list .flex-box-1 .box-title{
+  color: white;
+  font-size: 16px;
+  margin-left: 20rpx;
+  line-height: 20rpx;
+  margin-top: 10rpx;
+  width: 100%;
+  float: left;
+}
+.flex-list .flex-box-1 .box-time{
+  color: white;
+  font-size: 11px;
+  line-height: 8rpx;
+  margin-left: 20rpx;
+  margin-top: -10rpx;
+}
+.flex-list .flex-box-1 .box-user{
+  color: white;
+  font-size: 11px;
+  line-height: 8rpx;
+  margin-left: 20rpx;
+}
+.flex-list .flex-box-1 .box-user-img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+  float: left;
+  border-radius:40rpx; 
+}

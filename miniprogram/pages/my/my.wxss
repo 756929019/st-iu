@@ -1,0 +1,76 @@
+.personal_info {
+	padding: 20px 0;
+	background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 250rpx;
+}
+.photo_wrap {
+	text-align: center;
+  bottom: -80rpx;
+  position:absolute;
+  width: 100%;
+  height: 80px;
+}
+.photo {
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+  text-align: center;
+  margin: 0 auto;
+}
+.nickname {
+	margin-top: 150rpx;
+	text-align: center;
+	color: #ffffff;
+}
+.fensi {
+	margin-top: 40rpx;
+	text-align: center;
+	color: #ffffff;
+  width: 50%;
+  float: left;
+  background-color:rgba(0,0,0,0.4);
+}
+.guanzhu {
+	margin-top: 40rpx;
+	text-align: center;
+	color: #ffffff;
+  width: 50%;
+  float: right;
+  background-color:rgba(0,0,0,0.4);
+}
+
+.wode_item_wrap {
+	background-color: #FFF;
+	font-size: 14px;
+	margin-top: 50px;
+	border-top: 1px solid #E5E5E5;
+}
+.wode_item {
+  height: 45px;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 0 10px;
+	line-height: 45px;
+	position: relative;
+}
+.arrow_wrap {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    right: 0;
+    top: 8rpx;
+}
+.arrow_wrap  image{
+    width: 20px;
+    height: 20px;
+}
+.wode_out {
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background-color: #FFF;
+	margin-top: 10px;
+	border-bottom: 1px solid #E5E5E5;
+	border-top: 1px solid #E5E5E5;
+}

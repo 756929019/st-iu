@@ -1,0 +1,28 @@
+<view class="personal_info" style="background-image: url('http://img1.imgtn.bdimg.com/it/u=3825234964,3039605293&fm=26&gp=0.jpg');">
+	<view class="photo_wrap">
+  	<view class="photo">
+    <open-data type="userAvatarUrl" ></open-data>
+    </view>
+	</view>
+   	<view class="nickname">
+    <open-data type="userNickName"></open-data>
+    <open-data type="userGender" lang="zh_CN"></open-data>
+	  </view>
+  <view class="fensi">
+		粉丝：999
+	</view>
+  <view class="guanzhu">
+		关注：999
+	</view>
+ 
+</view>
+<view class="wode_item_wrap">
+	<view class="wode_item" wx:for="{{mode}}">
+		{{item}}
+		<view class="arrow_wrap">
+    <image src="../../images/icon-arrow.png"></image>
+    </view>
+	</view>
+</view>
+<button wx:if="{{canIUse}}" open-type="getUserInfo"bindgetuserinfo="onGotUserInfo">同意授权登录</button> <view wx:else>请升级微信版本</view>
+<view class="wode_out">退出</view>

@@ -1,0 +1,116 @@
+<!--index.wxml-->
+
+  <!-- 背景歌曲信息动画 -->
+  <view class="swiper-container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <view class="swiper-item-view">
+        <image src="{{item.img}}" class="img" bindtap="swipclick" />
+        <view class="swiper-item-text">
+        <text>{{item.txt1}}</text>
+        <text>\n{{item.txt2}}</text>
+        </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">推荐</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">发现</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">达人</view>
+    </scroll-view>
+     <swiper class="tab-content" current="{{currentTab}}" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+      <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <view class="flex-panel">
+                  <view class="flex-list">
+                   <block wx:if="{{ travels }}" wx:for="{{ travels }}" wx:for-item="item" wx:key="item._id">
+                  <view class="flex-box-1" bindtap='viewTrip' style="background-image: url('{{item.bgimg}}');">
+                  <view class="flex-box-txt-top">
+                    <text class='box-title'>{{item.title}}</text>
+                    <text class='box-time'>{{item.date}} {{item.day}}天 {{item.browse}}浏览</text>
+                  </view>
+                  <view class="flex-box-txt">
+                    <image class='box-user-img' src='../../images/temp_img2.jpg'></image>
+                    <text class='box-user'>by {{item.user}}</text>
+                  </view>
+                  </view>
+                  </block>
+                  </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                 <view class="flex-panel">
+                  <view class="flex-panel-title">
+                  <text>国庆最佳旅游地</text>
+                  </view>
+                  <view class="flex-list">
+                   <block wx:if="{{ addr }}" wx:for="{{ addr }}" wx:for-item="item" wx:key="item._id">
+                  <view  class="flex-box" style="background-image: url('{{item.img}}');">
+                  <view class="flex-box-txt">
+                  <text>{{item.name}}</text>
+                  </view>
+                  </view>
+                  </block>
+                  </view>
+                </view>
+
+                 <view class="flex-panel">
+                  <view class="flex-panel-title">
+                  <text>热门地点</text>
+                  </view>
+                  
+                   <view class="flex-list">
+                 <block wx:if="{{ addr }}" wx:for="{{ addr }}" wx:for-item="item" wx:key="item._id">
+                  <view  class="flex-box" style="background-image: url('{{item.img}}');">
+                  <view class="flex-box-txt">
+                  <text>{{item.name}}</text>
+                  </view>
+                  </view>
+                  </block>
+                  </view>
+                </view>
+                <view class="flex-panel">
+                  <view class="flex-panel-title">
+                  <text>欧洲国家</text>
+                  </view>
+                  
+                  <view class="flex-list">
+                  <block wx:if="{{ addr }}" wx:for="{{ addr }}" wx:for-item="item" wx:key="item._id">
+                  <view  class="flex-box" style="background-image: url('{{item.img}}');">
+                  <view class="flex-box-txt">
+                  <text>{{item.name}}</text>
+                  </view>
+                  </view>
+                  </block>
+                  </view>
+                </view>
+
+            </scroll-view>
+        </swiper-item>
+        
+         <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13]}}" wx:key="*this">
+                    <view class="item-ans">
+                        <view class="avatar">
+                            <image class="img" src="../../images/temp_img2.jpg"></image>
+                        </view>
+                        <view class="expertInfo">
+                            <view class="name">Mike</view>
+                            <view class="tag">爱运动、爱旅行</view>
+                            <view class="answerHistory">134个游记，2234人看过 </view>
+                        </view>
+                        <navigator url="/pages/askExpert/expertDetail" class="askBtn">关注</navigator> 
+                    </view>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+  </view>
+</view>

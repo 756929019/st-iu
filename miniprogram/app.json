@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/travels/travels",
+    "pages/addr/addr",
+    "pages/travels/trip/trip",
+    "pages/travels/waypoint/waypoint"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "石头IU",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/bar1.png",
+        "selectedIconPath": "images/bar1_s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/travels/travels",
+        "iconPath": "images/bar2.png",
+        "selectedIconPath": "images/bar2_s.png",
+        "text": "游记"
+      },
+      {
+        "pagePath": "pages/addr/addr",
+        "iconPath": "images/bar3.png",
+        "selectedIconPath": "images/bar3_s.png",
+        "text": "目的地"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/bar4.png",
+        "selectedIconPath": "images/bar4_s.png",
+        "text": "我"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

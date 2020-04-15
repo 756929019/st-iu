@@ -1,0 +1,36 @@
+/* pages/addr/addr.wxss */
+.flex-panel{height: 100%;padding: 0rpx;overflow-x: hidden;}
+
+.flex-list{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content:center;
+  justify-content:space-around;
+}
+ 
+.flex-list .flex-box{
+  width:48vw;
+  height: 200rpx;
+  text-align: center;
+  margin-left:1vw; 
+  margin-right:1vw; 
+  margin-top: 3rpx;
+  margin-bottom: 10rpx;
+  border-radius:5px; 
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.flex-list .flex-box .flex-box-txt{
+  background-color:rgba(0,0,0,0.4);
+  color: white;
+  bottom: 10rpx;
+  width: 100%;
+  position:absolute;
+}
+
+.flex-panel-title{
+  margin: 16rpx;
+  color: #707070;
+}

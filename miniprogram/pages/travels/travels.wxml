@@ -1,0 +1,42 @@
+<view>
+<view class="flex-panel">
+                  <view class="flex-list">
+
+                  <block wx:if="{{ travels }}" wx:for="{{ travels }}" wx:for-item="item" wx:key="item._id">
+                  <view class="flex-box-1" bindtap='viewTrip' style="background-image: url('{{item.bgimg}}');">
+                  <view class="flex-box-txt-top">
+                    <text class='box-title'>{{item.title}}</text>
+                    <text class='box-time'>{{item.date}} {{item.day}}天 {{item.browse}}浏览</text>
+                  </view>
+                  <view class="flex-box-txt">
+                    <image class='box-user-img' src='../../images/temp_img2.jpg'></image>
+                    <text class='box-user'>by {{item.user}}</text>
+                  </view>
+                  </view>
+                  </block>
+                  </view>
+</view>
+
+<view class="add-btn-view" >
+
+   <!-- 蒙层 -->
+<view class='list-fix' wx:if="{{mengShow}}" bindtap='outbtn'>          
+  <!--mengShow是蒙层是否显示的标志，然后蒙层绑定outbtn的点击事件-->
+    <view class='in-list  {{aniStyle?"slideup":"slidedown"}}'  catchtap='inbtn'>　　　　
+    <!--这里的三元运算符是判断动画该执行哪一种，catchtap这个是阻止冒泡的点击事件，这个事件必须有，才能阻止冒泡-->
+        <view class='in-btn'>
+            <text>xxx</text>
+        </view>
+         <view class='in-btn'>
+            <text>xxx</text>
+        </view>
+    </view>
+</view>
+</view>
+
+<view class="post-view"  bindtap='outbtn'>
+ <view class="post" catchtap='inbtn'>
+  <image bindtap="postCilck" class="post_image {{selectPost ?'rotatePost':''}}"  src="../../images/add.png"></image>
+  </view>
+</view>
+</view>

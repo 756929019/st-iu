@@ -2,7 +2,8 @@
 
 #### 介绍
 石头IU旅行游记小程序
-
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0415/155627_5e22d68c_545745.png "微信截图_20200415155312.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0415/155639_1392263c_545745.png "微信截图_20200415155336.png")
 #### 软件架构
 软件架构说明
 
